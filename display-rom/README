@@ -1,0 +1,30 @@
+bingen tool
+===========
+
+This tool generates binary bit patterns suitable for flashing to an
+EEPROM. The pattern can be used in a time multiplexed display to
+generate decimal display of a binary value on seven segment outputs.
+
+The generated defaults use 8kbits for each decode. The binary value is
+presented on address lines A0 to A7, the binary display position on A8
+and A9 (8kbit). Additional bits select different decoding schemes.
+
+The default decoding scheme (A10->AXX = 0) is a simple unsigned
+decimal display. asserting A10 allows for signed twos compliment display.
+Additional decoding schemes for larger EEPROM could easily be added if
+required.
+
+usage
+-----
+
+build the tool with make
+
+   make
+
+run bingen with an output filename to create the bit pattern
+
+   ./bingen 28c16.bin
+
+The binary file can then be programmed into an EEPROM programmer as desired
+
+For conveniance a pre-generated 28c16.bin is provided
