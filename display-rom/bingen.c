@@ -172,7 +172,9 @@ int main(int argc, char **argv)
     }
   }
 
-  fd = open(argv[1], O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP);
+  fd = open(argv[1],
+	    O_WRONLY | O_CREAT | O_TRUNC,
+	    S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
   write(fd, o, sizeof(o));
   close(fd);
 
