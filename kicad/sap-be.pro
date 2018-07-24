@@ -77,5 +77,3 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=switches
-LibName31=74xxx
-LibName32=28c16
