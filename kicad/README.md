@@ -7,10 +7,8 @@ The design belongs to Ben, I just made a schematic in kicad
 
 This schematic is released under CC BY-SA licence
 
-The memory sheet has been altered the most and both the original and
-  bugfix only versions have been included for reference.
-
-This version contains fixes found while building my version:
+The memory and output sheets have been altered to apply fixes found
+  while building my version:
 
 1) Output display clock gating.
     
@@ -23,16 +21,9 @@ This version contains fixes found while building my version:
    This occoured in my build frequently when the control EEPROM
      address changed producing "runt" control pulses.
 
-   To address this the AND gate was replaced by a 74LS74 D latch which
-     clocks the state of the OI signal to the Q output only on the
-     rising edge of the main clock. This results in the 74LS273
-     recieving a rising edge clock as the Q output goes high.
-
-   The drawback to this solution is the output register cannot be
-     clocked on two sucessive main clock cycles as the second cycle
-     will not produce a rising edge. In practive the microcode never
-     asserts the OI signal in this manner in so this limitation is not
-     an issue.
+   To address this the 74LS08 AND gate and 74LS273 was replaced by a
+     74LS377 and the output in (OI) signal used to enable the latch
+     must be inverted.
 
 2) Memory write activating on switch back to run mode
    
