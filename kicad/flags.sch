@@ -1,48 +1,14 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:switches
-LIBS:74xxx
-LIBS:28c16
-LIBS:ne556
-LIBS:sap-be-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 12
-Title "Simple As Possible computer by Ben Eater"
-Date "2018-06-03"
-Rev "2"
+Sheet 7 13
+Title "Simple As Possible computer"
+Date "2017-05-10"
+Rev "1"
 Comp "Schematic released as CC BY-SA"
-Comment1 "Schematic capture by Vincent Sanders"
+Comment1 "This version by Vincent Sanders based on design by Ben Eater"
 Comment2 "Flags register"
 Comment3 ""
 Comment4 ""
@@ -61,35 +27,13 @@ Text HLabel 4650 1500 2    60   Output ~ 0
 CF
 Text HLabel 4650 1600 2    60   Output ~ 0
 ZF
-$Comp
-L 74LS173 U601
-U 1 1 5AD47646
-P 3600 2050
-F 0 "U601" H 3700 2150 50  0000 C CNN
-F 1 "74LS173" H 3700 2000 50  0000 C CNN
-F 2 "Housings_DIP:DIP-16_W7.62mm_LongPads" H 3600 2050 50  0001 C CNN
-F 3 "" H 3600 2050 50  0000 C CNN
-	1    3600 2050
-	1    0    0    -1  
-$EndComp
 Text Label 1550 950  2    60   ~ 0
 ~LOAD
-Text Label 2550 2300 0    60   ~ 0
+Text Label 2950 2400 0    60   ~ 0
 ~LOAD
-$Comp
-L GND #PWR034
-U 1 1 5AD4767C
-P 2450 2100
-F 0 "#PWR034" H 2450 1850 50  0001 C CNN
-F 1 "GND" H 2450 1950 50  0000 C CNN
-F 2 "" H 2450 2100 50  0000 C CNN
-F 3 "" H 2450 2100 50  0000 C CNN
-	1    2450 2100
-	1    0    0    -1  
-$EndComp
-Text Label 2550 1500 0    60   ~ 0
+Text Label 2950 1500 0    60   ~ 0
 CARRY
-Text Label 2550 1600 0    60   ~ 0
+Text Label 2950 1600 0    60   ~ 0
 ZERO
 Text Label 1550 1450 2    60   ~ 0
 CARRY
@@ -99,30 +43,30 @@ Text Label 1550 1100 2    60   ~ 0
 CLK
 Text Label 1550 1250 2    60   ~ 0
 RST
-Text Label 2600 2600 0    60   ~ 0
+Text Label 3000 2700 0    60   ~ 0
 RST
 Wire Wire Line
 	1550 950  1300 950 
 Wire Wire Line
-	2550 2300 2900 2300
+	2950 2400 3200 2400
 Wire Wire Line
-	2800 2300 2800 2200
+	3200 2400 3300 2400
 Wire Wire Line
-	2800 2200 2900 2200
-Connection ~ 2800 2300
+	3200 2400 3200 2300
 Wire Wire Line
-	2450 2050 2900 2050
+	3200 2300 3300 2300
+Connection ~ 3200 2400
 Wire Wire Line
-	2450 2050 2450 2100
+	3300 2100 3200 2100
 Wire Wire Line
-	2900 1950 2800 1950
+	3300 2000 3200 2000
 Wire Wire Line
-	2800 1950 2800 2050
-Connection ~ 2800 2050
+	3200 2000 3200 2100
+Connection ~ 3200 2100
 Wire Wire Line
-	2550 1500 2900 1500
+	2950 1500 3300 1500
 Wire Wire Line
-	2550 1600 2900 1600
+	2950 1600 3300 1600
 Wire Wire Line
 	1550 1450 1300 1450
 Wire Wire Line
@@ -136,10 +80,10 @@ Wire Wire Line
 Wire Wire Line
 	1550 1100 1300 1100
 Wire Wire Line
-	2550 2600 2900 2600
+	2950 2700 3300 2700
 Wire Wire Line
-	2550 2400 2900 2400
-Text Label 2550 2400 0    60   ~ 0
+	2950 2500 3300 2500
+Text Label 2950 2500 0    60   ~ 0
 CLK
 Text Label 4450 1500 0    60   ~ 0
 CF
@@ -147,45 +91,14 @@ Text Label 4450 1600 0    60   ~ 0
 ZF
 NoConn ~ 4300 1700
 NoConn ~ 4300 1800
-NoConn ~ 2900 1700
-NoConn ~ 2900 1800
-$Comp
-L LED D601
-U 1 1 5AD4AD3C
-P 5450 1800
-F 0 "D601" H 5450 1900 50  0000 C CNN
-F 1 "LED" H 5450 1700 50  0000 C CNN
-F 2 "LEDs:LED-5MM" H 5450 1800 50  0001 C CNN
-F 3 "" H 5450 1800 50  0000 C CNN
-	1    5450 1800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L LED D602
-U 1 1 5AD4AD4E
-P 5750 1800
-F 0 "D602" H 5750 1900 50  0000 C CNN
-F 1 "LED" H 5750 1700 50  0000 C CNN
-F 2 "LEDs:LED-5MM" H 5750 1800 50  0001 C CNN
-F 3 "" H 5750 1800 50  0000 C CNN
-	1    5750 1800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L GND #PWR035
-U 1 1 5AD4AD59
-P 5600 2100
-F 0 "#PWR035" H 5600 1850 50  0001 C CNN
-F 1 "GND" H 5600 1950 50  0000 C CNN
-F 2 "" H 5600 2100 50  0000 C CNN
-F 3 "" H 5600 2100 50  0000 C CNN
-	1    5600 2100
-	1    0    0    -1  
-$EndComp
+NoConn ~ 3300 1700
+NoConn ~ 3300 1800
 Wire Wire Line
 	5600 2100 5600 2050
 Wire Wire Line
-	5450 2050 5750 2050
+	5450 2050 5600 2050
+Wire Wire Line
+	5600 2050 5750 2050
 Wire Wire Line
 	5450 2050 5450 1950
 Wire Wire Line
@@ -199,4 +112,83 @@ Text Label 5450 1600 1    60   ~ 0
 CF
 Text Label 5750 1600 1    60   ~ 0
 ZF
+$Comp
+L power:GND #PWR071
+U 1 1 5EA8388C
+P 2800 2100
+F 0 "#PWR071" H 2800 1850 50  0001 C CNN
+F 1 "GND" H 2805 1927 50  0000 C CNN
+F 2 "" H 2800 2100 50  0001 C CNN
+F 3 "" H 2800 2100 50  0001 C CNN
+	1    2800 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2100 3200 2100
+$Comp
+L power:GND #PWR074
+U 1 1 5EA8545C
+P 5600 2100
+F 0 "#PWR074" H 5600 1850 50  0001 C CNN
+F 1 "GND" H 5605 1927 50  0000 C CNN
+F 2 "" H 5600 2100 50  0001 C CNN
+F 3 "" H 5600 2100 50  0001 C CNN
+	1    5600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5EA85B93
+P 5450 1800
+F 0 "D3" V 5489 1683 50  0000 R CNN
+F 1 "LED" V 5398 1683 50  0000 R CNN
+F 2 "" H 5450 1800 50  0001 C CNN
+F 3 "~" H 5450 1800 50  0001 C CNN
+	1    5450 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5EA8646D
+P 5750 1800
+F 0 "D4" V 5789 1683 50  0000 R CNN
+F 1 "LED" V 5698 1683 50  0000 R CNN
+F 2 "" H 5750 1800 50  0001 C CNN
+F 3 "~" H 5750 1800 50  0001 C CNN
+	1    5750 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74xx:74LS173 U22
+U 1 1 5EA87D23
+P 3800 2100
+F 0 "U22" H 3550 2850 50  0000 C CNN
+F 1 "74LS173" H 4000 1350 50  0000 C CNN
+F 2 "" H 3800 2100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS173" H 3800 2100 50  0001 C CNN
+	1    3800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR073
+U 1 1 5EA8EB64
+P 3800 3000
+F 0 "#PWR073" H 3800 2750 50  0001 C CNN
+F 1 "GND" H 3805 2827 50  0000 C CNN
+F 2 "" H 3800 3000 50  0001 C CNN
+F 3 "" H 3800 3000 50  0001 C CNN
+	1    3800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR072
+U 1 1 5EA8F117
+P 3800 1200
+F 0 "#PWR072" H 3800 1050 50  0001 C CNN
+F 1 "VCC" H 3817 1373 50  0000 C CNN
+F 2 "" H 3800 1200 50  0001 C CNN
+F 3 "" H 3800 1200 50  0001 C CNN
+	1    3800 1200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

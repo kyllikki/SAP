@@ -1,8 +1,8 @@
-Simple As Possible (SAP) computer by Ben Eater
-==============================================
+Simple As Possible (SAP) computer
+=================================
 
 This is a schematic capture of this project derived from the excellent
-  video series [1] as I have built it.
+  video series [1] by Ben Eater.
 
 The design is based on the one by Ben but with modifications in
   several areas to reduce the number of chips needed. However the
@@ -104,4 +104,4 @@ These changes have been made when building my version:
 
 [1] https://www.youtube.com/watch?v=HyznrdDSSGM&list=PLowKtXNTBypGqImE405J2565dvjafglHU
 
-[2] https://github.com/kyllikki/eda-designs/tree/master/SAP-BE
+[2] https://github.com/kyllikki/SAP/tree/beneater

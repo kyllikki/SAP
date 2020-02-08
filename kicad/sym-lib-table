@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name sap)(type Legacy)(uri ${KIPRJMOD}/sap.lib)(options "")(descr ""))
+)
