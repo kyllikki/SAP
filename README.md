@@ -1,7 +1,8 @@
-Simple As Possible (SAP) computer by Ben Eater
+Simple As Possible (SAP) computer
 ==============================================
 
-This is a schematic capture of this project derived from the excellent video series [1]
+This is a schematic capture of this project derived from the excellent
+  video series [1] by Ben Eater.
 
 The design belongs to Ben, I just made a schematic in kicad
 

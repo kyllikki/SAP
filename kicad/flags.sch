@@ -3,12 +3,12 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 13
-Title "Simple As Possible computer by Ben Eater"
+Sheet 7 13
+Title "Simple As Possible computer"
 Date "2017-05-10"
 Rev "1"
 Comp "Schematic released as CC BY-SA"
-Comment1 "Schematic capture by Vincent Sanders"
+Comment1 "Schematic capture by Vincent Sanders of a design by Ben Eater"
 Comment2 "Flags register"
 Comment3 ""
 Comment4 ""
@@ -113,10 +113,10 @@ CF
 Text Label 5750 1600 1    60   ~ 0
 ZF
 $Comp
-L power:GND #PWR0156
+L power:GND #PWR077
 U 1 1 5EA8388C
 P 2800 2100
-F 0 "#PWR0156" H 2800 1850 50  0001 C CNN
+F 0 "#PWR077" H 2800 1850 50  0001 C CNN
 F 1 "GND" H 2805 1927 50  0000 C CNN
 F 2 "" H 2800 2100 50  0001 C CNN
 F 3 "" H 2800 2100 50  0001 C CNN
@@ -126,10 +126,10 @@ $EndComp
 Wire Wire Line
 	2800 2100 3200 2100
 $Comp
-L power:GND #PWR0159
+L power:GND #PWR080
 U 1 1 5EA8545C
 P 5600 2100
-F 0 "#PWR0159" H 5600 1850 50  0001 C CNN
+F 0 "#PWR080" H 5600 1850 50  0001 C CNN
 F 1 "GND" H 5605 1927 50  0000 C CNN
 F 2 "" H 5600 2100 50  0001 C CNN
 F 3 "" H 5600 2100 50  0001 C CNN
@@ -137,10 +137,10 @@ F 3 "" H 5600 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D62
+L Device:LED D28
 U 1 1 5EA85B93
 P 5450 1800
-F 0 "D62" V 5489 1683 50  0000 R CNN
+F 0 "D28" V 5489 1683 50  0000 R CNN
 F 1 "LED" V 5398 1683 50  0000 R CNN
 F 2 "" H 5450 1800 50  0001 C CNN
 F 3 "~" H 5450 1800 50  0001 C CNN
@@ -148,10 +148,10 @@ F 3 "~" H 5450 1800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D63
+L Device:LED D29
 U 1 1 5EA8646D
 P 5750 1800
-F 0 "D63" V 5789 1683 50  0000 R CNN
+F 0 "D29" V 5789 1683 50  0000 R CNN
 F 1 "LED" V 5698 1683 50  0000 R CNN
 F 2 "" H 5750 1800 50  0001 C CNN
 F 3 "~" H 5750 1800 50  0001 C CNN
@@ -159,10 +159,10 @@ F 3 "~" H 5750 1800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 74xx:74LS173 U48
+L 74xx:74LS173 U27
 U 1 1 5EA87D23
 P 3800 2100
-F 0 "U48" H 3550 2850 50  0000 C CNN
+F 0 "U27" H 3550 2850 50  0000 C CNN
 F 1 "74LS173" H 4000 1350 50  0000 C CNN
 F 2 "" H 3800 2100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS173" H 3800 2100 50  0001 C CNN
@@ -170,10 +170,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS173" H 3800 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0158
+L power:GND #PWR079
 U 1 1 5EA8EB64
 P 3800 3000
-F 0 "#PWR0158" H 3800 2750 50  0001 C CNN
+F 0 "#PWR079" H 3800 2750 50  0001 C CNN
 F 1 "GND" H 3805 2827 50  0000 C CNN
 F 2 "" H 3800 3000 50  0001 C CNN
 F 3 "" H 3800 3000 50  0001 C CNN
@@ -181,10 +181,10 @@ F 3 "" H 3800 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0157
+L power:VCC #PWR078
 U 1 1 5EA8F117
 P 3800 1200
-F 0 "#PWR0157" H 3800 1050 50  0001 C CNN
+F 0 "#PWR078" H 3800 1050 50  0001 C CNN
 F 1 "VCC" H 3817 1373 50  0000 C CNN
 F 2 "" H 3800 1200 50  0001 C CNN
 F 3 "" H 3800 1200 50  0001 C CNN
