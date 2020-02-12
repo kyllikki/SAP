@@ -512,7 +512,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 2900 1800 3950
 $Comp
-L sap-be:74LS189 U32
+L sap:74LS189 U32
 U 1 1 611DA12F
 P 4800 4750
 F 0 "U32" H 4450 5350 50  0000 C CNN
@@ -637,7 +637,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 10250 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L sap-be:74LS189 U31
+L sap:74LS189 U31
 U 1 1 611D9751
 P 4800 2450
 F 0 "U31" H 4450 3050 50  0000 C CNN

@@ -762,7 +762,7 @@ F 3 "" H 1200 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L sap-be:28C16 U?
+L sap:28C16 U?
 U 1 1 62226BB7
 P 4050 2050
 AR Path="/62226BB7" Ref="U?"  Part="1" 

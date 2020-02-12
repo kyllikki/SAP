@@ -858,7 +858,7 @@ F 3 "" H 1250 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L sap-be:28C16 U39
+L sap:28C16 U39
 U 1 1 622FB85B
 P 3050 4900
 F 0 "U39" H 2700 5900 50  0000 C CNN
@@ -869,7 +869,7 @@ F 3 "" H 3050 4900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L sap-be:28C16 U41
+L sap:28C16 U41
 U 1 1 6230695B
 P 5900 4900
 F 0 "U41" H 5550 5900 50  0000 C CNN
