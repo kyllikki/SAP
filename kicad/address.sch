@@ -8,10 +8,10 @@ Title "Simple As Possible computer"
 Date "2017-05-10"
 Rev "1"
 Comp "Schematic released as CC BY-SA"
-Comment1 "Schematic capture by Vincent Sanders of a design by Ben Eater"
-Comment2 "Address latch with manual programming"
-Comment3 ""
-Comment4 ""
+Comment1 ""
+Comment2 "https://eater.net/8bit/ram"
+Comment3 "Schematic capture by Vincent Sanders of a design by Ben Eater"
+Comment4 "Memory Address Register with manual programming"
 $EndDescr
 Text HLabel 2600 2100 0    60   3State ~ 0
 w[0..7]

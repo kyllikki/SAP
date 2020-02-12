@@ -3,15 +3,15 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 13
+Sheet 13 13
 Title "Simple As Possible computer"
 Date "2017-05-10"
 Rev "1"
 Comp "Schematic released as CC BY-SA"
-Comment1 "Schematic capture by Vincent Sanders of a design by Ben Eater"
-Comment2 "Control flags display"
-Comment3 ""
-Comment4 ""
+Comment1 ""
+Comment2 "https://eater.net/8bit/bus"
+Comment3 "Schematic capture by Vincent Sanders of a design by Ben Eater"
+Comment4 "Control flags display"
 $EndDescr
 Text HLabel 750  1000 0    60   Input ~ 0
 HLT
@@ -187,8 +187,6 @@ Wire Wire Line
 	750  1000 900  1000
 Wire Wire Line
 	900  1000 900  1050
-Wire Notes Line
-	4000 600  4000 7600
 Wire Notes Line
 	7800 600  7800 6350
 Wire Notes Line
@@ -641,12 +639,12 @@ $EndComp
 $Comp
 L 74xx:74LS04 U21
 U 7 1 600C06E0
-P 1400 6850
-F 0 "U21" V 1250 6750 50  0000 L CNN
-F 1 "74LS04" V 1550 6700 50  0000 L CNN
-F 2 "" H 1400 6850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 1400 6850 50  0001 C CNN
-	7    1400 6850
+P 5550 6900
+F 0 "U21" V 5400 6800 50  0000 L CNN
+F 1 "74LS04" V 5700 6750 50  0000 L CNN
+F 2 "" H 5550 6900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5550 6900 50  0001 C CNN
+	7    5550 6900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -718,12 +716,12 @@ $EndComp
 $Comp
 L 74xx:74LS04 U51
 U 7 1 600D08BB
-P 2100 6850
-F 0 "U51" V 1950 6800 50  0000 L CNN
-F 1 "74LS04" V 2250 6700 50  0000 L CNN
-F 2 "" H 2100 6850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 2100 6850 50  0001 C CNN
-	7    2100 6850
+P 6250 6900
+F 0 "U51" V 6100 6850 50  0000 L CNN
+F 1 "74LS04" V 6400 6750 50  0000 L CNN
+F 2 "" H 6250 6900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6250 6900 50  0001 C CNN
+	7    6250 6900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -775,35 +773,35 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0156
 U 1 1 60176C4C
-P 1200 7350
-F 0 "#PWR0156" H 1200 7100 50  0001 C CNN
-F 1 "GND" H 1205 7177 50  0000 C CNN
-F 2 "" H 1200 7350 50  0001 C CNN
-F 3 "" H 1200 7350 50  0001 C CNN
-	1    1200 7350
+P 5350 7400
+F 0 "#PWR0156" H 5350 7150 50  0001 C CNN
+F 1 "GND" H 5355 7227 50  0000 C CNN
+F 2 "" H 5350 7400 50  0001 C CNN
+F 3 "" H 5350 7400 50  0001 C CNN
+	1    5350 7400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0155
 U 1 1 60176E93
-P 1200 6350
-F 0 "#PWR0155" H 1200 6200 50  0001 C CNN
-F 1 "VCC" H 1217 6523 50  0000 C CNN
-F 2 "" H 1200 6350 50  0001 C CNN
-F 3 "" H 1200 6350 50  0001 C CNN
-	1    1200 6350
+P 5350 6400
+F 0 "#PWR0155" H 5350 6250 50  0001 C CNN
+F 1 "VCC" H 5367 6573 50  0000 C CNN
+F 2 "" H 5350 6400 50  0001 C CNN
+F 3 "" H 5350 6400 50  0001 C CNN
+	1    5350 6400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 6350 1400 6350
-Connection ~ 1400 6350
+	6250 6400 5550 6400
+Connection ~ 5550 6400
 Wire Wire Line
-	1400 6350 1200 6350
+	5550 6400 5350 6400
 Wire Wire Line
-	2100 7350 1400 7350
-Connection ~ 1400 7350
+	6250 7400 5550 7400
+Connection ~ 5550 7400
 Wire Wire Line
-	1400 7350 1200 7350
+	5550 7400 5350 7400
 $Comp
 L power:GND #PWR0154
 U 1 1 60188227
@@ -980,4 +978,6 @@ F 3 "" H 6350 5350 50  0001 C CNN
 	1    6350 5350
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	4000 6250 4000 600 
 $EndSCHEMATC

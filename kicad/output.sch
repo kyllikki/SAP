@@ -8,10 +8,10 @@ Title "Simple As Possible computer"
 Date "2017-05-10"
 Rev "1"
 Comp "Schematic released as CC BY-SA"
-Comment1 "Schematic capture by Vincent Sanders of a design by Ben Eater"
-Comment2 "7 segment output register"
-Comment3 ""
-Comment4 ""
+Comment1 ""
+Comment2 "https://eater.net/8bit/output"
+Comment3 "Schematic capture by Vincent Sanders of a design by Ben Eater"
+Comment4 "7 segment display output register"
 $EndDescr
 Text Label 4850 1150 2    60   ~ 0
 s0
